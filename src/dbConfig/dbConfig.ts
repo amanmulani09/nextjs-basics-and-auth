@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-export default function dbConfig(){
+export default async function dbConfig(){
     try{
         mongoose.connect(process.env.MONGODB_URL!)
         const connection = mongoose.connection;
